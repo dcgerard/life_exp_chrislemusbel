@@ -27,14 +27,16 @@ gapminder_unfiltered %>%
   ungroup() %>%
   select(country,year, lifeExp) %>%
   arrange(year)
+
+
+
 ```
 
 # Abstract 
 
 Here, I analyze the famous plot from Oeppen and Vaupel (HTML)
 
-# Analysis
-
+Now I will make a plot 
 
 
 
