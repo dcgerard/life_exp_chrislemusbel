@@ -1,0 +1,40 @@
+---
+title: "Life Expectancy Analysis"
+author: "Christopher Lemus-Beltran"
+date: "8/31/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(ggplot2)
+
+install.packages("gapminder")
+
+library(gapminder)
+data("gapminder_unfiltered")
+```
+
+
+```{r setup, include=FALSE}
+gapminder_unfiltered
+
+gapminder_unfiltered %>%
+  group_by(year) %>%
+  filter(lifeExp == max(lifeExp)) %>%
+  ungroup() %>%
+  select(country,year, lifeExp) %>%
+  arrange(year)
+```
+
+# Abstract 
+
+Here, I analyze the famous plot from Oeppen and Vaupel (HTML)
+
+# Analysis
+
+
+
+
