@@ -27,9 +27,6 @@ gapminder_unfiltered %>%
   ungroup() %>%
   select(country,year, lifeExp) %>%
   arrange(year)
-
-
-
 ```
 
 # Abstract 
@@ -42,10 +39,5 @@ Now I will add some sumary statistics
 gapminder_unfiltered %>% 
   filter(year == 2000) %>%
   summarise(ave == mean(lifeExp))
-
-
-
-
 ```
-
 
