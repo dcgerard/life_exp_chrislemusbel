@@ -36,7 +36,16 @@ gapminder_unfiltered %>%
 
 Here, I analyze the famous plot from Oeppen and Vaupel (HTML)
 
-Now I will make a plot 
+Now I will add some sumary statistics
 
+```{r}
+gapminder_unfiltered %>% 
+  filter(year == 2000) %>%
+  summarise(ave == mean(lifeExp))
+
+
+
+
+```
 
 
